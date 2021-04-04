@@ -9,6 +9,10 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World!'
 
+@app.route('/test')
+def hello_ozan():
+    return 'Hello Test!'
+
 @app.route('/ozan')
 def hello_ozan():
     return 'Hello Ozan!'
